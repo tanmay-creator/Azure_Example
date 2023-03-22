@@ -2,5 +2,15 @@
   "name": "Azure_Example",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "cd client/mern_azure_example && yarn && yarn run build && cd ../.. && node server",
+    "dev": "node server"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  }
 }
